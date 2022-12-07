@@ -125,6 +125,34 @@ main{
     display: none;  
 }
 
+.butoonSound{
+    display: flex;
+    position: relative;
+    
+}
+
+.buttonSound svg{
+    margin-top: 12px;
+}
+
+input{
+    width: 90px;
+    height: 16px;
+    margin-top: 20px;
+    background-color: white;
+    color: white;
+}
+
+input::-webkit-slider-thumb{
+    background: #E1E1E6;
+}
+
+input::-moz-range-thumb{
+    background: #E1E1E6;
+}
+
+
+
 /* dark mode*/
 
 

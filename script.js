@@ -169,6 +169,7 @@ function menosCinco() {
 }
 
 function floresta() {
+    audioFloresta.loop = true
     audioFloresta.play()
     audioChuva.pause()
     audioLareira.pause()
@@ -182,6 +183,7 @@ function floresta() {
 
 function chuva() {
     audioChuva.play()
+    audioChuva.loop = true
     audioFloresta.pause()
     audioLareira.pause()
     audioCafeteria.pause()
@@ -194,6 +196,7 @@ function chuva() {
 
 function cafeteria() {
     audioFloresta.pause()
+    audioCafeteria = true
     audioChuva.pause()
     audioLareira.pause()
     audioCafeteria.play() 
@@ -206,6 +209,7 @@ function cafeteria() {
 
 function lareira() {
     audioLareira.play()
+    audioLareira = true
     audioFloresta.pause()
     audioChuva.pause()
     audioCafeteria.pause()
@@ -217,6 +221,25 @@ function lareira() {
     
 }
 
+const volForest = document.querySelector('.volForest')
+const volRain = document.querySelector('.volRain')
+const volStore = document.querySelector('.volStore')
+const volFire = document.querySelector('.volFire')
 
+  volForest.addEventListener('input', () => {
+    audioFloresta.volume = volForest.value
+  })
+  
+  volRain.addEventListener('input', () => {
+    audioChuva.volume = volRain.value
+  })
+  
+  volStore.addEventListener('input', () => {
+    audioCafeteria.volume = volStore.value
+  })
+  
+  volFire.addEventListener('input', () => {
+    audioLareira.volume = volFire.value
+  })
 
 
