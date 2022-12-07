@@ -196,7 +196,7 @@ function chuva() {
 
 function cafeteria() {
     audioFloresta.pause()
-    audioCafeteria = true
+    audioCafeteria.loop = true
     audioChuva.pause()
     audioLareira.pause()
     audioCafeteria.play() 
@@ -209,7 +209,7 @@ function cafeteria() {
 
 function lareira() {
     audioLareira.play()
-    audioLareira = true
+    audioLareira.loop = true
     audioFloresta.pause()
     audioChuva.pause()
     audioCafeteria.pause()
