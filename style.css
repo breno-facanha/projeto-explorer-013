@@ -57,6 +57,7 @@ main{
     line-height: 14.8rem;
     font-weight: 500;
     margin-bottom: 4.5rem;
+    user-select: none;
 }
 
 .controls{
